@@ -6,7 +6,15 @@ For my thesis project I need to check for millions of GPS coordinates (split in 
 
 The *compare functions* file holds the file that creates some fake GPS coordinates and all the packages that are needed to run the functions. The other four files are the different versions of the functions.
 
+with a 100,000 GPS points and 5000 features this is how the different functions preform on my laptop:
 
+```
+#  test replications elapsed relative user.self sys.self
+#1    0            1  198.48 1044.632    189.82     8.28
+#2    1            1   29.93  157.526     29.69     0.45
+#3    2            1    7.94   41.789      7.36     0.94
+#4    3            1    0.19    1.000      0.19     0.00
+```
 
 If, instead of using simulated GPS coordinates of busstops in the Netherlands, you want to use the actual data, you can load them  by using this code:
 ```r
