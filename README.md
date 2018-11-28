@@ -6,7 +6,7 @@ For my thesis project I need to check for millions of GPS coordinates (split in 
 
 The *compare functions* file holds the file that creates some fake GPS coordinates and all the packages that are needed to run the functions. The other four files are the different versions of the functions.
 
-with a 100,000 GPS points and 5000 features this is how the different functions preform on my laptop:
+With 100,000 GPS points and 5000 features this is how the different functions perform on my laptop:
 
 ```
 #  test replications elapsed relative user.self sys.self
