@@ -13,7 +13,7 @@ library(rbenchmark)
 
 # create some fake GPS data
 set.seed(1)
-number_of_GPS_coordinates <- 50000
+number_of_GPS_coordinates <- 100000
 gpsdata.fake <- data.frame(id=1:number_of_GPS_coordinates,
                            device_id=1,
                            latitude=runif(number_of_GPS_coordinates,50.5,53.5), 
@@ -61,7 +61,7 @@ benchmarks <- benchmark(
     
     
   },
-  replications = 2,
+  replications = 1,
   columns = c("test", "replications", "elapsed",
               "relative", "user.self", "sys.self"))
 
